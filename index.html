@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lesson 8. Images. Font Awesome. Basic Animation.</h1>
+    <h2>Font Awesome + transition</h2>
+    <div class="upper-first">
+        <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check-square"></i>Marvel</li>
+            <li><i class="fa-li fa fa-spinner fa-spin"></i>DC</li>
+            <li><i class="fa-li fa fa-square"></i>Star Wars</li>
+          </ul>
+    </div>
+    <p>Наведись на синий блок и увидь магию <b>transition</b></p>
+    <h2>Transform</h2>
+    <div class="upper-second">
+        <div class="block-element"></div>
+        <div class="block-element"></div>
+        <div class="block-element"></div>
+    </div>
+    <p><b>Transform & keyframes</b> в действии</p>
+    <h2>CSS Background</h2>
+    <div>
+        <img class="cosmo-image" src="./img/cosmo image.jpg" alt="">
+    </div>
+    <p>Вставляем картинку через <b>CSS</b> свойство <b>Background</b></p>
+    <h2>Images (HTML Picture)</h2>
+    <picture>
+        <picture>
+            <source srcset="./img/Marvel-Image.jpg" media="(min-width: 2560px)">
+            <source srcset="./img/dc-image.jpg" media="(min-width: 1080px)">
+            <img srcset="./img/star-wars-image.png" alt="default">
+        </picture>
+        <p>Использование тега <b>picture</b> для отображение нужной картинки на нужном разрешении</p>
+        <p>Открой эту страницу на <b>разных девайсах </b>и посмотри на результат </p>
+    </picture>
+    <h2>Universes (HTML Object-fit)</h2>
+    <div class="main-universe">
+        <div class="universes">
+            <img class="block" src="./img/star-wars-image.png">
+            <p>Здесь кроется картинка <b>300*300</b></p>
+        </div>
+        <div class="universes">
+            <img class="block" src="./img/dc-image.jpg">
+            <p>Здесь кроется картинка <b>700*700</b></p>
+        </div>
+        <div class="universe">
+            <img class="block" src="./img/Marvel-Image.jpg">
+            <p>Здесь кроется картинка <b>2560*1440</b></p>
+        </div>
+    </div>
+    <h2>Universes in-a-row</h2>
+    <div class="second-universe">
+        <div class="universe-2">
+            <img class="block-2" src="./img/Marvel-Image.jpg">
+            <div class="block-text">
+            <b>Marvel</b>
+            <p>Marvel Entertainment, is an American entertainment company founded in June 1998 and based in New York City, New York formed by the merger of Marvel Entertainment Group, Inc. and ToyBiz. The company is a wholly owned subsidiary of The Walt Disney Company, and is mainly known for its comic books by Marvel Comics, as well as its forays into films, including those within the Marvel Cinematic Universe.</p>
+            </div>
+        </div>
+        <div class="universe-2">
+            <img class="block-2" src="./img/dc-image.jpg">
+            <div class="block-text">
+            <b>DC</b>
+            <p>DC Comics is one of the largest and oldest American comic book companies, with their first comic under the DC banner being published in 1937. The majority of its publications take place within the fictional DC Universe and feature numerous culturally iconic heroic characters, such as Superman, Batman, and Wonder Woman.</p>
+            </div>
+        </div>
+        <div class="universe-2">
+            <img class="block-2" src="./img/star-wars-image.png">
+            <div class="block-text">
+            <b>Star-Wars</b>
+            <p>The original film (Star Wars), retroactively subtitled Episode IV: A New Hope (1977), was followed by the sequels Episode V: The Empire Strikes Back (1980) and Episode VI: Return of the Jedi (1983), forming the original Star Wars trilogy.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
